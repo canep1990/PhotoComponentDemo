@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+/** Custom object for holding index paths of selected cells */
 @interface YVIndexPath : NSObject
-
+/** Index Path for table view */
 @property (strong, nonatomic) NSIndexPath *selectedTableViewIndexPath;
+/** Index Path for collection view */
 @property (strong, nonatomic) NSIndexPath *selectedCollectionViewIndexPath;
 
 @end

@@ -35,6 +35,7 @@
 		EFFEE9351B1A9599001479B0 /* YVNavigationBarTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE9341B1A9599001479B0 /* YVNavigationBarTitleLabel.m */; };
 		EFFEE9381B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE9371B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m */; };
 		EFFEE93B1B1AE195001479B0 /* YVIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE93A1B1AE195001479B0 /* YVIndexPath.m */; };
+		EFFEE93E1B1C1D2C001479B0 /* APLReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE93D1B1C1D2C001479B0 /* APLReachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		EFFEE9371B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVNavigationBarDescriptionLabel.m; sourceTree = "<group>"; };
 		EFFEE9391B1AE195001479B0 /* YVIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVIndexPath.h; sourceTree = "<group>"; };
 		EFFEE93A1B1AE195001479B0 /* YVIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVIndexPath.m; sourceTree = "<group>"; };
+		EFFEE93C1B1C1D2C001479B0 /* APLReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLReachability.h; sourceTree = "<group>"; };
+		EFFEE93D1B1C1D2C001479B0 /* APLReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLReachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 		EF7F0C431B19BD0900B5A535 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				EFFEE93C1B1C1D2C001479B0 /* APLReachability.h */,
+				EFFEE93D1B1C1D2C001479B0 /* APLReachability.m */,
 				EF480A381B182369009F750F /* 50.jpg */,
 				EF9C21CE1B180A0C00C1A7EE /* Arrow@2x.png */,
 				EF9C21A41B18091100C1A7EE /* AppDelegate.h */,
@@ -426,6 +431,7 @@
 				EFFEE92D1B1A92A0001479B0 /* AsyncImageView.m in Sources */,
 				EF7F0C491B19BF5F00B5A535 /* UIImage+ImageWithColor.m in Sources */,
 				EF9C21D21B180A4D00C1A7EE /* YVBaseView.m in Sources */,
+				EFFEE93E1B1C1D2C001479B0 /* APLReachability.m in Sources */,
 				EFFEE9381B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m in Sources */,
 				EF9C21A61B18091100C1A7EE /* AppDelegate.m in Sources */,
 				EF9C21A31B18091100C1A7EE /* main.m in Sources */,

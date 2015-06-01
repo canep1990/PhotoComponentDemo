@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/** Label with dark text color */
 @interface YVDarkLabel : UILabel
 
 @end

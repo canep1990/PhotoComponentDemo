@@ -13,16 +13,20 @@
 #import "YVIndexPath.h"
 #import "YVImageCollectionCell.h"
 
+/** Contant cell reuse identifier */
 static NSString *const kCellReuseIndentifier = @"Cell333";
+/** Section reuse identifier */
 static NSString *const kSectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
+/** Section height */
 static NSInteger const kSectionHeaderHeight = 44;
 NSUInteger const YVMaximumArrayCapacity = 20;
 
 @interface YVFolderView () <UITableViewDataSource, UITableViewDelegate, YVSectionViewDelegate, YVTableCellDelegate>
 
+/** Table view */
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+/** Array for holding YVIndexPath objects */
 @property (strong, nonatomic) NSMutableArray *selectedIndexPathsArray;
-@property (nonatomic) NSInteger openSectionIndex;
 
 @end
 
@@ -37,7 +41,6 @@ NSUInteger const YVMaximumArrayCapacity = 20;
     self.tableView.tableFooterView = view;
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.sectionHeaderHeight = kSectionHeaderHeight;
-    self.openSectionIndex = NSNotFound;
     self.selectedIndexPathsArray = [[NSMutableArray alloc] initWithCapacity:YVMaximumArrayCapacity];
 }
 
@@ -105,7 +108,7 @@ NSUInteger const YVMaximumArrayCapacity = 20;
     if (reminderOfDevision != 0)
         numberOfElements = numberOfElements + 1;
     CGFloat heightForAllElements = YVItemLayoutSize * numberOfElements + YVItemSpacing * (numberOfElements + 1);
-
+    
     CGFloat heightForScreen;
     if (indexPath.section == 0)
         heightForScreen = self.frame.size.height - ((kSectionHeaderHeight*2));
@@ -113,7 +116,7 @@ NSUInteger const YVMaximumArrayCapacity = 20;
         heightForScreen = self.frame.size.height - ((kSectionHeaderHeight*3));
     
     NSLog(@"heightForAllElements: %f heightForScreen: %f", heightForAllElements, heightForScreen);
-
+    
     if (heightForAllElements >= heightForScreen)
         return heightForScreen;
     else
@@ -183,21 +186,31 @@ NSUInteger const YVMaximumArrayCapacity = 20;
     selectedIndexPath.selectedTableViewIndexPath = tableSelectedIndexPath;
     selectedIndexPath.selectedCollectionViewIndexPath = indexPath;
     YVImageCollectionCell *collectionCell = (YVImageCollectionCell *)[imageCell.collectionView cellForItemAtIndexPath:indexPath];
-    if (collectionCell.imageView.image)
+    if (self.selectedIndexPathsArray.count < YVMaximumArrayCapacity)
     {
-        if ([self.selectedIndexPathsArray containsObject:selectedIndexPath])
+        if (collectionCell.imageView.image)
         {
-            [self.selectedIndexPathsArray removeObject:selectedIndexPath];
-            [collectionCell.overlayView setHidden:YES];
+            if ([self.selectedIndexPathsArray containsObject:selectedIndexPath])
+            {
+                [self.selectedIndexPathsArray removeObject:selectedIndexPath];
+                [collectionCell.overlayView setHidden:YES];
+            }
+            else
+            {
+                [self.selectedIndexPathsArray addObject:selectedIndexPath];
+                [collectionCell.overlayView setHidden:NO];
+            }
+            if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfSelectedObjectsDidChange:)])
+            {
+                [self.delegate numberOfSelectedObjectsDidChange:self.selectedIndexPathsArray.count];
+            }
         }
-        else
+    }
+    else
+    {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfSelectedObjectsDidExceedTheLimit)])
         {
-            [self.selectedIndexPathsArray addObject:selectedIndexPath];
-            [collectionCell.overlayView setHidden:NO];
-        }
-        if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfSelectedObjectsDidChange:)])
-        {
-            [self.delegate numberOfSelectedObjectsDidChange:self.selectedIndexPathsArray.count];
+            [self.delegate numberOfSelectedObjectsDidExceedTheLimit];
         }
     }
 }

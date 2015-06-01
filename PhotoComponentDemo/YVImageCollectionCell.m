@@ -11,8 +11,8 @@
 
 @implementation YVImageCollectionCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)awakeFromNib
+{
     self.backgroundColor = [UIColor yv_middleGrayApplicationColor];
     [self.overlayView setHidden:YES];
 }

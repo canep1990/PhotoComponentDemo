@@ -11,9 +11,6 @@
 #import "UIColor+ApplicationColor.h"
 #import "UIImage+ImageWithColor.h"
 
-// TO DO: Alert showing
-// Scroll View Synchronization
-
 @interface AppDelegate ()
 
 @end
@@ -23,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // set the appearance
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor yv_darkApplicationColor]] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTintColor:[UIColor yv_lightGrayApplicationColor]];
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor yv_lightGrayApplicationColor], NSForegroundColorAttributeName, nil];
@@ -31,6 +29,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    // set starting vc
     YVFolderViewController *folderVC = [[YVFolderViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:folderVC];
     self.window.rootViewController = navController;

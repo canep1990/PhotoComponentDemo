@@ -13,11 +13,22 @@
 #import "YVSectionInfo.h"
 #import "YVNavigationBarView.h"
 
-static NSString *const kCellReuseIndentifier = @"Cell333";
-static NSString *const kSectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
+/** Const for kittens url */
 static NSString *const kURLStringForKittens = @"http://placekitten.com/g/134/134";
+/** Const for alert title */
+static NSString *const kAlertTitle = @"Ошибка";
+/** Const for alert message */
+static NSString *const kAlertMessage = @"Превышен лимит выбора котиков";
+/** Const for alert button title */
+static NSString *const kButtonTitle = @"OK";
 
 @interface YVFolderViewController () <YVFolderViewDelegate>
+
+/** Create albums data */
+- (NSArray *)initializeArrayOfObjects;
+
+/** Generate random number within a range */
+- (NSInteger)randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max;
 
 @end
 
@@ -25,6 +36,7 @@ static NSString *const kURLStringForKittens = @"http://placekitten.com/g/134/134
 
 - (void)loadView
 {
+    // load folder view
     YVFolderView *view = [[YVFolderView alloc] init];
     view.delegate = self;
     NSArray *sectionInfoArray = [self initializeArrayOfObjects];
@@ -36,6 +48,7 @@ static NSString *const kURLStringForKittens = @"http://placekitten.com/g/134/134
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // create custom nav item from xib
     self.navigationItem.titleView = [[YVNavigationBarView alloc] init];
 }
 
@@ -69,7 +82,6 @@ static NSString *const kURLStringForKittens = @"http://placekitten.com/g/134/134
 
 - (NSInteger)randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max
 {
-    NSLog(@"random number is: %d", min + arc4random_uniform(max - min + 1));
     return min + arc4random_uniform(max - min + 1);
 }
 
@@ -82,6 +94,22 @@ static NSString *const kURLStringForKittens = @"http://placekitten.com/g/134/134
         navigationBarView.selectionDescriptionLabel.text = @"";
     } else {
         navigationBarView.selectionDescriptionLabel.text = [NSString stringWithFormat:@"%d из %d", numberOfObjects, YVMaximumArrayCapacity];
+    }
+}
+
+- (void)numberOfSelectedObjectsDidExceedTheLimit
+{
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0)
+    {
+        UIAlertController *controller = [UIAlertController alertControllerWithTitle:kAlertTitle message:kAlertMessage preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:kButtonTitle style:UIAlertActionStyleCancel handler:nil];
+        [controller addAction:action];
+        [self presentViewController:controller animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kAlertTitle message:kAlertMessage delegate:nil cancelButtonTitle:kButtonTitle otherButtonTitles:nil];
+        [alert show];
     }
 }
 

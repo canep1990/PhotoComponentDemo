@@ -10,6 +10,7 @@
 
 @interface UIImage (ImageWithColor)
 
+/** Helper function for getting UIImage from UIColor */
 + (UIImage *)imageWithColor:(UIColor *)color;
 
 @end

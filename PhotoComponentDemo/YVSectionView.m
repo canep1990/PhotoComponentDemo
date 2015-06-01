@@ -10,14 +10,15 @@
 #import "UIColor+ApplicationColor.h"
 #import "UIView+Borders.h"
 
+/** Constant for button rotation angle */
 static NSInteger const kDegreesRotationAngle = 180;
-static float const kAnimationDuration = 0.3;
+/** Constant for animation duration interval */
+static NSTimeInterval const kAnimationDuration = 0.3;
 
 @implementation YVSectionView
 
 - (void)awakeFromNib
 {
-    NSLog(@"Awake from nib YVSectionView: %d", self.section);
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleOpen:)];
     [self.contentView addGestureRecognizer:tapGesture];
     self.contentView.backgroundColor = [UIColor yv_grayApplicationColor];

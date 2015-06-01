@@ -9,12 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "YVSectionView.h"
 
+/** Custom object for holding Section Info */
 @interface YVSectionInfo : NSObject
 
-@property (strong, nonatomic) NSString *sectionInfoTitle;
+/** Section title */
+@property (copy, nonatomic) NSString *sectionInfoTitle;
+/** Array of image urls */
 @property (copy, nonatomic) NSArray *imagesURLArray;
 
+/** Flag. Indicates if the section is open */
 @property (getter = isOpen) BOOL open;
+/** Header view */
 @property YVSectionView *headerView;
 
 @end

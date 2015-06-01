@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/** Main view controller. Controls everything connected to folders */
 @interface YVFolderViewController : UIViewController
 
 @end

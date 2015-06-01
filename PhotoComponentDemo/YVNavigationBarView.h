@@ -8,9 +8,12 @@
 
 #import "YVBaseView.h"
 
+/** Custom view for navigation ber */
 @interface YVNavigationBarView : YVBaseView
 
+/** Nav bar title label */
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+/** Nav bar description label */
 @property (weak, nonatomic) IBOutlet UILabel *selectionDescriptionLabel;
 
 @end

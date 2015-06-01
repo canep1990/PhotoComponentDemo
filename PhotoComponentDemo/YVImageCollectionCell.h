@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-
+/** Subclass of UICollectionViewCell that displays images */
 @interface YVImageCollectionCell : UICollectionViewCell
 
+/** Image view for displaying loaded images */
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 /** Selection image view */
 @property (weak, nonatomic) IBOutlet UIImageView *overlayView;
-/** Flag that indicates if the cell can be selected. If Image for that cell was downloaded, isSelectable = YES */
-@property (nonatomic) BOOL isSelectable;
-
 
 @end

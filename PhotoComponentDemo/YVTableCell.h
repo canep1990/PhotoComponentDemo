@@ -11,21 +11,29 @@
 
 @class YVTableCell;
 
+/** Delegate. Indicates that an item was selected in image cell */
 @protocol YVTableCellDelegate <NSObject>
 
+/** Callback for selected item */
 - (void)tableCell:(YVTableCell *)imageCell didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
+/** Constant for layout item size */
 FOUNDATION_EXPORT NSInteger const YVItemLayoutSize;
+/** Constant for padding */
 FOUNDATION_EXPORT NSInteger const YVItemSpacing;
 
+/** Custom cell that displays loaded images in grids */
 @interface YVTableCell : UITableViewCell
 
+/** Delegate property */
 @property (weak, nonatomic) id <YVTableCellDelegate> delegate;
 
-@property (strong, nonatomic) NSArray *imagesURLArray;
+/** NSArray of images to download */
+@property (copy, nonatomic) NSArray *imagesURLArray;
 
+/** Collection View */
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

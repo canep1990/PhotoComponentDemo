@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/** Nav bar label with gray text color */
 @interface YVNavigationBarDescriptionLabel : UILabel
 
 @end
