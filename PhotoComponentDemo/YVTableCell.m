@@ -97,6 +97,21 @@ NSInteger const YVItemSpacing = 10;
     NSURL *urlForLoading = self.imagesURLArray[indexPath.row];
     [[AsyncImageLoader sharedLoader] cancelLoadingImagesForTarget:cell];
     APLReachability *reachability = [APLReachability reachabilityWithHostName:[urlForLoading host]];
+    if (self.selectedIndexesArray)
+    {
+        if ([self.selectedIndexesArray containsObject:indexPath])
+        {
+            [cell.overlayView setHidden:NO];
+        }
+        else
+        {
+            [cell.overlayView setHidden:YES];
+        }
+    }
+    else
+    {
+        [cell.overlayView setHidden:YES];
+    }
     if ([reachability currentReachabilityStatus] == NotReachable)
     {
         cell.imageView.image = [UIImage imageNamed:@"kitten.jpg"];

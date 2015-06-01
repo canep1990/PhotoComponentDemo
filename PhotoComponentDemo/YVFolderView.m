@@ -73,6 +73,19 @@ NSUInteger const YVMaximumArrayCapacity = 20;
     cell.delegate = self;
     YVSectionInfo *sectionInfo = (self.sectionInfoArray)[indexPath.section];
     cell.imagesURLArray = sectionInfo.imagesURLArray;
+    
+    NSMutableArray *selectedIndexesArray = [NSMutableArray array];
+    if (self.selectedIndexPathsArray.count > 0)
+    {
+        for (YVIndexPath *yvIndexPath in self.selectedIndexPathsArray)
+        {
+            if ([yvIndexPath.selectedTableViewIndexPath isEqual:indexPath])
+            {
+                [selectedIndexesArray addObject:yvIndexPath.selectedCollectionViewIndexPath];
+            }
+        }
+    }
+    cell.selectedIndexesArray = selectedIndexesArray;
     [cell.collectionView reloadData];
     return cell;
 }
@@ -186,31 +199,31 @@ NSUInteger const YVMaximumArrayCapacity = 20;
     selectedIndexPath.selectedTableViewIndexPath = tableSelectedIndexPath;
     selectedIndexPath.selectedCollectionViewIndexPath = indexPath;
     YVImageCollectionCell *collectionCell = (YVImageCollectionCell *)[imageCell.collectionView cellForItemAtIndexPath:indexPath];
-    if (self.selectedIndexPathsArray.count < YVMaximumArrayCapacity)
+    if (collectionCell.imageView.image)
     {
-        if (collectionCell.imageView.image)
+        if ([self.selectedIndexPathsArray containsObject:selectedIndexPath])
         {
-            if ([self.selectedIndexPathsArray containsObject:selectedIndexPath])
-            {
-                [self.selectedIndexPathsArray removeObject:selectedIndexPath];
-                [collectionCell.overlayView setHidden:YES];
-            }
-            else
+            [self.selectedIndexPathsArray removeObject:selectedIndexPath];
+            [collectionCell.overlayView setHidden:YES];
+        }
+        else
+        {
+            if (self.selectedIndexPathsArray.count < YVMaximumArrayCapacity)
             {
                 [self.selectedIndexPathsArray addObject:selectedIndexPath];
                 [collectionCell.overlayView setHidden:NO];
             }
-            if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfSelectedObjectsDidChange:)])
+            else
             {
-                [self.delegate numberOfSelectedObjectsDidChange:self.selectedIndexPathsArray.count];
+                if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfSelectedObjectsDidExceedTheLimit)])
+                {
+                    [self.delegate numberOfSelectedObjectsDidExceedTheLimit];
+                }
             }
         }
-    }
-    else
-    {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfSelectedObjectsDidExceedTheLimit)])
+        if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfSelectedObjectsDidChange:)])
         {
-            [self.delegate numberOfSelectedObjectsDidExceedTheLimit];
+            [self.delegate numberOfSelectedObjectsDidChange:self.selectedIndexPathsArray.count];
         }
     }
 }

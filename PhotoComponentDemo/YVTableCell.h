@@ -33,6 +33,9 @@ FOUNDATION_EXPORT NSInteger const YVItemSpacing;
 /** NSArray of images to download */
 @property (copy, nonatomic) NSArray *imagesURLArray;
 
+/** NSArray of selected items */
+@property (copy, nonatomic) NSArray *selectedIndexesArray;
+
 /** Collection View */
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
