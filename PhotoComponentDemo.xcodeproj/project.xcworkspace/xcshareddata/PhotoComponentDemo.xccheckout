@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DDF49230-BB23-43AC-9395-70BB31679496</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1089A3F58E10463331C72F1FF21BFA5BB55ECC0D</key>
+		<string>https://github.com/canep1990/PhotoComponentDemo</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PhotoComponentDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1089A3F58E10463331C72F1FF21BFA5BB55ECC0D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/canep1990/PhotoComponentDemo</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1089A3F58E10463331C72F1FF21BFA5BB55ECC0D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1089A3F58E10463331C72F1FF21BFA5BB55ECC0D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotoComponentDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
