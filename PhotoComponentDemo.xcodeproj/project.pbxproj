@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF480A311B181188009F750F /* YVTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF480A2F1B181188009F750F /* YVTableCell.m */; };
+		EF480A321B181188009F750F /* YVTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF480A301B181188009F750F /* YVTableCell.xib */; };
+		EF480A361B18126E009F750F /* YVImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF480A341B18126E009F750F /* YVImageCollectionCell.m */; };
+		EF480A371B18126E009F750F /* YVImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF480A351B18126E009F750F /* YVImageCollectionCell.xib */; };
+		EF480A391B182369009F750F /* 50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF480A381B182369009F750F /* 50.jpg */; };
+		EF480A461B1845C0009F750F /* YVSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF480A441B1845C0009F750F /* YVSectionView.m */; };
+		EF480A471B1845C0009F750F /* YVSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF480A451B1845C0009F750F /* YVSectionView.xib */; };
+		EF7F0C461B19BD6100B5A535 /* UIColor+ApplicationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F0C451B19BD6100B5A535 /* UIColor+ApplicationColor.m */; };
+		EF7F0C491B19BF5F00B5A535 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F0C481B19BF5F00B5A535 /* UIImage+ImageWithColor.m */; };
+		EF7F0C4D1B19C39A00B5A535 /* YVDarkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F0C4C1B19C39A00B5A535 /* YVDarkLabel.m */; };
+		EF9C21A31B18091100C1A7EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C21A21B18091100C1A7EE /* main.m */; };
+		EF9C21A61B18091100C1A7EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C21A51B18091100C1A7EE /* AppDelegate.m */; };
+		EF9C21AE1B18091100C1A7EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C21AD1B18091100C1A7EE /* Images.xcassets */; };
+		EF9C21B11B18091100C1A7EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9C21AF1B18091100C1A7EE /* LaunchScreen.xib */; };
+		EF9C21BD1B18091100C1A7EE /* PhotoComponentDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C21BC1B18091100C1A7EE /* PhotoComponentDemoTests.m */; };
+		EF9C21CD1B1809EB00C1A7EE /* YVFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C21CC1B1809EB00C1A7EE /* YVFolderViewController.m */; };
+		EF9C21CF1B180A0D00C1A7EE /* Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9C21CE1B180A0C00C1A7EE /* Arrow@2x.png */; };
+		EF9C21D21B180A4D00C1A7EE /* YVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C21D11B180A4D00C1A7EE /* YVBaseView.m */; };
+		EF9C21D51B180A6F00C1A7EE /* YVFolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C21D41B180A6F00C1A7EE /* YVFolderView.m */; };
+		EF9C21D71B180A7B00C1A7EE /* YVFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9C21D61B180A7B00C1A7EE /* YVFolderView.xib */; };
+		EF9C21DA1B180B5300C1A7EE /* YVSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C21D91B180B5300C1A7EE /* YVSectionInfo.m */; };
+		EFFEE92A1B1A903B001479B0 /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE9291B1A903B001479B0 /* UIView+Borders.m */; };
+		EFFEE92D1B1A92A0001479B0 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE92C1B1A92A0001479B0 /* AsyncImageView.m */; };
+		EFFEE9301B1A949F001479B0 /* YVNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE92F1B1A949F001479B0 /* YVNavigationBarView.m */; };
+		EFFEE9321B1A94C0001479B0 /* YVNavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFEE9311B1A94C0001479B0 /* YVNavigationBarView.xib */; };
+		EFFEE9351B1A9599001479B0 /* YVNavigationBarTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE9341B1A9599001479B0 /* YVNavigationBarTitleLabel.m */; };
+		EFFEE9381B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE9371B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m */; };
+		EFFEE93B1B1AE195001479B0 /* YVIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE93A1B1AE195001479B0 /* YVIndexPath.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF9C21B71B18091100C1A7EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF9C21951B18091100C1A7EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF9C219C1B18091100C1A7EE;
+			remoteInfo = PhotoComponentDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF480A2E1B181188009F750F /* YVTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVTableCell.h; sourceTree = "<group>"; };
+		EF480A2F1B181188009F750F /* YVTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVTableCell.m; sourceTree = "<group>"; };
+		EF480A301B181188009F750F /* YVTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVTableCell.xib; sourceTree = "<group>"; };
+		EF480A331B18126E009F750F /* YVImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVImageCollectionCell.h; sourceTree = "<group>"; };
+		EF480A341B18126E009F750F /* YVImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVImageCollectionCell.m; sourceTree = "<group>"; };
+		EF480A351B18126E009F750F /* YVImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVImageCollectionCell.xib; sourceTree = "<group>"; };
+		EF480A381B182369009F750F /* 50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 50.jpg; sourceTree = "<group>"; };
+		EF480A431B1845C0009F750F /* YVSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVSectionView.h; sourceTree = "<group>"; };
+		EF480A441B1845C0009F750F /* YVSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVSectionView.m; sourceTree = "<group>"; };
+		EF480A451B1845C0009F750F /* YVSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVSectionView.xib; sourceTree = "<group>"; };
+		EF7F0C441B19BD6100B5A535 /* UIColor+ApplicationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ApplicationColor.h"; sourceTree = "<group>"; };
+		EF7F0C451B19BD6100B5A535 /* UIColor+ApplicationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ApplicationColor.m"; sourceTree = "<group>"; };
+		EF7F0C471B19BF5F00B5A535 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		EF7F0C481B19BF5F00B5A535 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		EF7F0C4B1B19C39A00B5A535 /* YVDarkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVDarkLabel.h; sourceTree = "<group>"; };
+		EF7F0C4C1B19C39A00B5A535 /* YVDarkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVDarkLabel.m; sourceTree = "<group>"; };
+		EF9C219D1B18091100C1A7EE /* PhotoComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9C21A11B18091100C1A7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9C21A21B18091100C1A7EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF9C21A41B18091100C1A7EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF9C21A51B18091100C1A7EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF9C21AD1B18091100C1A7EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF9C21B01B18091100C1A7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF9C21B61B18091100C1A7EE /* PhotoComponentDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoComponentDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9C21BB1B18091100C1A7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9C21BC1B18091100C1A7EE /* PhotoComponentDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoComponentDemoTests.m; sourceTree = "<group>"; };
+		EF9C21CB1B1809EB00C1A7EE /* YVFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVFolderViewController.h; sourceTree = "<group>"; };
+		EF9C21CC1B1809EB00C1A7EE /* YVFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVFolderViewController.m; sourceTree = "<group>"; };
+		EF9C21CE1B180A0C00C1A7EE /* Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@2x.png"; sourceTree = "<group>"; };
+		EF9C21D01B180A4D00C1A7EE /* YVBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVBaseView.h; sourceTree = "<group>"; };
+		EF9C21D11B180A4D00C1A7EE /* YVBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVBaseView.m; sourceTree = "<group>"; };
+		EF9C21D31B180A6F00C1A7EE /* YVFolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVFolderView.h; sourceTree = "<group>"; };
+		EF9C21D41B180A6F00C1A7EE /* YVFolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVFolderView.m; sourceTree = "<group>"; };
+		EF9C21D61B180A7B00C1A7EE /* YVFolderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVFolderView.xib; sourceTree = "<group>"; };
+		EF9C21D81B180B5300C1A7EE /* YVSectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVSectionInfo.h; sourceTree = "<group>"; };
+		EF9C21D91B180B5300C1A7EE /* YVSectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVSectionInfo.m; sourceTree = "<group>"; };
+		EFFEE9281B1A903B001479B0 /* UIView+Borders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
+		EFFEE9291B1A903B001479B0 /* UIView+Borders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
+		EFFEE92B1B1A92A0001479B0 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		EFFEE92C1B1A92A0001479B0 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		EFFEE92E1B1A949F001479B0 /* YVNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVNavigationBarView.h; sourceTree = "<group>"; };
+		EFFEE92F1B1A949F001479B0 /* YVNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVNavigationBarView.m; sourceTree = "<group>"; };
+		EFFEE9311B1A94C0001479B0 /* YVNavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVNavigationBarView.xib; sourceTree = "<group>"; };
+		EFFEE9331B1A9599001479B0 /* YVNavigationBarTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVNavigationBarTitleLabel.h; sourceTree = "<group>"; };
+		EFFEE9341B1A9599001479B0 /* YVNavigationBarTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVNavigationBarTitleLabel.m; sourceTree = "<group>"; };
+		EFFEE9361B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVNavigationBarDescriptionLabel.h; sourceTree = "<group>"; };
+		EFFEE9371B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVNavigationBarDescriptionLabel.m; sourceTree = "<group>"; };
+		EFFEE9391B1AE195001479B0 /* YVIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVIndexPath.h; sourceTree = "<group>"; };
+		EFFEE93A1B1AE195001479B0 /* YVIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVIndexPath.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF9C219A1B18091100C1A7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C21B31B18091100C1A7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF480A2C1B1810F3009F750F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF480A2E1B181188009F750F /* YVTableCell.h */,
+				EF480A2F1B181188009F750F /* YVTableCell.m */,
+				EF480A301B181188009F750F /* YVTableCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		EF480A2D1B1810FE009F750F /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF480A331B18126E009F750F /* YVImageCollectionCell.h */,
+				EF480A341B18126E009F750F /* YVImageCollectionCell.m */,
+				EF480A351B18126E009F750F /* YVImageCollectionCell.xib */,
+			);
+			name = CollectionCells;
+			sourceTree = "<group>";
+		};
+		EF7F0C421B19BCF200B5A535 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFFEE92B1B1A92A0001479B0 /* AsyncImageView.h */,
+				EFFEE92C1B1A92A0001479B0 /* AsyncImageView.m */,
+				EFFEE9281B1A903B001479B0 /* UIView+Borders.h */,
+				EFFEE9291B1A903B001479B0 /* UIView+Borders.m */,
+				EF7F0C441B19BD6100B5A535 /* UIColor+ApplicationColor.h */,
+				EF7F0C451B19BD6100B5A535 /* UIColor+ApplicationColor.m */,
+				EF7F0C471B19BF5F00B5A535 /* UIImage+ImageWithColor.h */,
+				EF7F0C481B19BF5F00B5A535 /* UIImage+ImageWithColor.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EF7F0C431B19BD0900B5A535 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EF480A381B182369009F750F /* 50.jpg */,
+				EF9C21CE1B180A0C00C1A7EE /* Arrow@2x.png */,
+				EF9C21A41B18091100C1A7EE /* AppDelegate.h */,
+				EF9C21A51B18091100C1A7EE /* AppDelegate.m */,
+				EF9C21AD1B18091100C1A7EE /* Images.xcassets */,
+				EF9C21AF1B18091100C1A7EE /* LaunchScreen.xib */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EF7F0C4A1B19C37B00B5A535 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F0C4B1B19C39A00B5A535 /* YVDarkLabel.h */,
+				EF7F0C4C1B19C39A00B5A535 /* YVDarkLabel.m */,
+				EFFEE9331B1A9599001479B0 /* YVNavigationBarTitleLabel.h */,
+				EFFEE9341B1A9599001479B0 /* YVNavigationBarTitleLabel.m */,
+				EFFEE9361B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.h */,
+				EFFEE9371B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m */,
+			);
+			name = Labels;
+			sourceTree = "<group>";
+		};
+		EF9C21941B18091100C1A7EE = {
+			isa = PBXGroup;
+			children = (
+				EF9C219F1B18091100C1A7EE /* PhotoComponentDemo */,
+				EF9C21B91B18091100C1A7EE /* PhotoComponentDemoTests */,
+				EF9C219E1B18091100C1A7EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF9C219E1B18091100C1A7EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C219D1B18091100C1A7EE /* PhotoComponentDemo.app */,
+				EF9C21B61B18091100C1A7EE /* PhotoComponentDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF9C219F1B18091100C1A7EE /* PhotoComponentDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21C61B18098D00C1A7EE /* Classes */,
+				EF9C21A01B18091100C1A7EE /* Supporting Files */,
+			);
+			path = PhotoComponentDemo;
+			sourceTree = "<group>";
+		};
+		EF9C21A01B18091100C1A7EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21A11B18091100C1A7EE /* Info.plist */,
+				EF9C21A21B18091100C1A7EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF9C21B91B18091100C1A7EE /* PhotoComponentDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21BC1B18091100C1A7EE /* PhotoComponentDemoTests.m */,
+				EF9C21BA1B18091100C1A7EE /* Supporting Files */,
+			);
+			path = PhotoComponentDemoTests;
+			sourceTree = "<group>";
+		};
+		EF9C21BA1B18091100C1A7EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21BB1B18091100C1A7EE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF9C21C61B18098D00C1A7EE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21C71B18099600C1A7EE /* AppDelegate/Utils */,
+				EF9C21CA1B1809B600C1A7EE /* Controller */,
+				EF9C21C91B1809B000C1A7EE /* View */,
+				EF9C21C81B1809AB00C1A7EE /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EF9C21C71B18099600C1A7EE /* AppDelegate/Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F0C431B19BD0900B5A535 /* AppDelegate */,
+				EF7F0C421B19BCF200B5A535 /* Extensions */,
+			);
+			name = AppDelegate/Utils;
+			sourceTree = "<group>";
+		};
+		EF9C21C81B1809AB00C1A7EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21D81B180B5300C1A7EE /* YVSectionInfo.h */,
+				EF9C21D91B180B5300C1A7EE /* YVSectionInfo.m */,
+				EFFEE9391B1AE195001479B0 /* YVIndexPath.h */,
+				EFFEE93A1B1AE195001479B0 /* YVIndexPath.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EF9C21C91B1809B000C1A7EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F0C4A1B19C37B00B5A535 /* Labels */,
+				EF480A2D1B1810FE009F750F /* CollectionCells */,
+				EF9C21E11B180DE500C1A7EE /* TableCells */,
+				EF9C21E01B180DDC00C1A7EE /* ControllerViews */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EF9C21CA1B1809B600C1A7EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21CB1B1809EB00C1A7EE /* YVFolderViewController.h */,
+				EF9C21CC1B1809EB00C1A7EE /* YVFolderViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EF9C21E01B180DDC00C1A7EE /* ControllerViews */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C21D01B180A4D00C1A7EE /* YVBaseView.h */,
+				EF9C21D11B180A4D00C1A7EE /* YVBaseView.m */,
+				EF9C21D31B180A6F00C1A7EE /* YVFolderView.h */,
+				EF9C21D41B180A6F00C1A7EE /* YVFolderView.m */,
+				EF9C21D61B180A7B00C1A7EE /* YVFolderView.xib */,
+				EFFEE92E1B1A949F001479B0 /* YVNavigationBarView.h */,
+				EFFEE92F1B1A949F001479B0 /* YVNavigationBarView.m */,
+				EFFEE9311B1A94C0001479B0 /* YVNavigationBarView.xib */,
+			);
+			name = ControllerViews;
+			sourceTree = "<group>";
+		};
+		EF9C21E11B180DE500C1A7EE /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF480A2C1B1810F3009F750F /* Cells */,
+				EF9C21E21B180DEE00C1A7EE /* HeaderView */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		EF9C21E21B180DEE00C1A7EE /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				EF480A431B1845C0009F750F /* YVSectionView.h */,
+				EF480A441B1845C0009F750F /* YVSectionView.m */,
+				EF480A451B1845C0009F750F /* YVSectionView.xib */,
+			);
+			name = HeaderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF9C219C1B18091100C1A7EE /* PhotoComponentDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9C21C01B18091100C1A7EE /* Build configuration list for PBXNativeTarget "PhotoComponentDemo" */;
+			buildPhases = (
+				EF9C21991B18091100C1A7EE /* Sources */,
+				EF9C219A1B18091100C1A7EE /* Frameworks */,
+				EF9C219B1B18091100C1A7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoComponentDemo;
+			productName = PhotoComponentDemo;
+			productReference = EF9C219D1B18091100C1A7EE /* PhotoComponentDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF9C21B51B18091100C1A7EE /* PhotoComponentDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9C21C31B18091100C1A7EE /* Build configuration list for PBXNativeTarget "PhotoComponentDemoTests" */;
+			buildPhases = (
+				EF9C21B21B18091100C1A7EE /* Sources */,
+				EF9C21B31B18091100C1A7EE /* Frameworks */,
+				EF9C21B41B18091100C1A7EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9C21B81B18091100C1A7EE /* PBXTargetDependency */,
+			);
+			name = PhotoComponentDemoTests;
+			productName = PhotoComponentDemoTests;
+			productReference = EF9C21B61B18091100C1A7EE /* PhotoComponentDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF9C21951B18091100C1A7EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Юрий Воскресенский";
+				TargetAttributes = {
+					EF9C219C1B18091100C1A7EE = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EF9C21B51B18091100C1A7EE = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EF9C219C1B18091100C1A7EE;
+					};
+				};
+			};
+			buildConfigurationList = EF9C21981B18091100C1A7EE /* Build configuration list for PBXProject "PhotoComponentDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF9C21941B18091100C1A7EE;
+			productRefGroup = EF9C219E1B18091100C1A7EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF9C219C1B18091100C1A7EE /* PhotoComponentDemo */,
+				EF9C21B51B18091100C1A7EE /* PhotoComponentDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF9C219B1B18091100C1A7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C21B11B18091100C1A7EE /* LaunchScreen.xib in Resources */,
+				EF480A391B182369009F750F /* 50.jpg in Resources */,
+				EF9C21CF1B180A0D00C1A7EE /* Arrow@2x.png in Resources */,
+				EFFEE9321B1A94C0001479B0 /* YVNavigationBarView.xib in Resources */,
+				EF480A471B1845C0009F750F /* YVSectionView.xib in Resources */,
+				EF480A321B181188009F750F /* YVTableCell.xib in Resources */,
+				EF480A371B18126E009F750F /* YVImageCollectionCell.xib in Resources */,
+				EF9C21AE1B18091100C1A7EE /* Images.xcassets in Resources */,
+				EF9C21D71B180A7B00C1A7EE /* YVFolderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C21B41B18091100C1A7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF9C21991B18091100C1A7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C21DA1B180B5300C1A7EE /* YVSectionInfo.m in Sources */,
+				EFFEE92D1B1A92A0001479B0 /* AsyncImageView.m in Sources */,
+				EF7F0C491B19BF5F00B5A535 /* UIImage+ImageWithColor.m in Sources */,
+				EF9C21D21B180A4D00C1A7EE /* YVBaseView.m in Sources */,
+				EFFEE9381B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m in Sources */,
+				EF9C21A61B18091100C1A7EE /* AppDelegate.m in Sources */,
+				EF9C21A31B18091100C1A7EE /* main.m in Sources */,
+				EF9C21D51B180A6F00C1A7EE /* YVFolderView.m in Sources */,
+				EF9C21CD1B1809EB00C1A7EE /* YVFolderViewController.m in Sources */,
+				EF480A461B1845C0009F750F /* YVSectionView.m in Sources */,
+				EF480A361B18126E009F750F /* YVImageCollectionCell.m in Sources */,
+				EFFEE93B1B1AE195001479B0 /* YVIndexPath.m in Sources */,
+				EFFEE9351B1A9599001479B0 /* YVNavigationBarTitleLabel.m in Sources */,
+				EF7F0C461B19BD6100B5A535 /* UIColor+ApplicationColor.m in Sources */,
+				EF7F0C4D1B19C39A00B5A535 /* YVDarkLabel.m in Sources */,
+				EFFEE92A1B1A903B001479B0 /* UIView+Borders.m in Sources */,
+				EF480A311B181188009F750F /* YVTableCell.m in Sources */,
+				EFFEE9301B1A949F001479B0 /* YVNavigationBarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C21B21B18091100C1A7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C21BD1B18091100C1A7EE /* PhotoComponentDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF9C21B81B18091100C1A7EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF9C219C1B18091100C1A7EE /* PhotoComponentDemo */;
+			targetProxy = EF9C21B71B18091100C1A7EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF9C21AF1B18091100C1A7EE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF9C21B01B18091100C1A7EE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF9C21BE1B18091100C1A7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF9C21BF1B18091100C1A7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF9C21C11B18091100C1A7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoComponentDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF9C21C21B18091100C1A7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoComponentDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF9C21C41B18091100C1A7EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoComponentDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoComponentDemo.app/PhotoComponentDemo";
+			};
+			name = Debug;
+		};
+		EF9C21C51B18091100C1A7EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoComponentDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoComponentDemo.app/PhotoComponentDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF9C21981B18091100C1A7EE /* Build configuration list for PBXProject "PhotoComponentDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C21BE1B18091100C1A7EE /* Debug */,
+				EF9C21BF1B18091100C1A7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9C21C01B18091100C1A7EE /* Build configuration list for PBXNativeTarget "PhotoComponentDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C21C11B18091100C1A7EE /* Debug */,
+				EF9C21C21B18091100C1A7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9C21C31B18091100C1A7EE /* Build configuration list for PBXNativeTarget "PhotoComponentDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C21C41B18091100C1A7EE /* Debug */,
+				EF9C21C51B18091100C1A7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF9C21951B18091100C1A7EE /* Project object */;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YVImageCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BMi-Id-grO" customClass="AsyncImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Selectionselection" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-JS-e3v">
+                        <rect key="frame" x="17" y="17" width="30" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="2Gi-pq-Y7N"/>
+                            <constraint firstAttribute="height" constant="24" id="qsR-bX-gmJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="BMi-Id-grO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FKB-KO-xKq"/>
+                <constraint firstAttribute="bottom" secondItem="aRG-JS-e3v" secondAttribute="bottom" constant="9" id="Q6i-nD-Ztf"/>
+                <constraint firstAttribute="trailing" secondItem="aRG-JS-e3v" secondAttribute="trailing" constant="3" id="SLJ-Ox-P5o"/>
+                <constraint firstItem="BMi-Id-grO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xny-LY-oPn"/>
+                <constraint firstAttribute="trailing" secondItem="BMi-Id-grO" secondAttribute="trailing" id="eds-wF-Fau"/>
+                <constraint firstAttribute="bottom" secondItem="BMi-Id-grO" secondAttribute="bottom" id="mTc-Jp-4EF"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="BMi-Id-grO" id="8xr-ci-6aF"/>
+                <outlet property="overlayView" destination="aRG-JS-e3v" id="CgA-9q-JDG"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Selectionselection" width="30" height="24"/>
+    </resources>
+</document>

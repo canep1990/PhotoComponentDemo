@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YVFolderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-Q2-Q9v">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="X5p-IO-D1w"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="oUj-sq-Cgl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iRc-Q2-Q9v" secondAttribute="trailing" id="SGp-aL-dSJ"/>
+                <constraint firstItem="iRc-Q2-Q9v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fEK-7R-z7F"/>
+                <constraint firstItem="iRc-Q2-Q9v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rbz-V6-HFC"/>
+                <constraint firstAttribute="bottom" secondItem="iRc-Q2-Q9v" secondAttribute="bottom" id="szH-P6-d0L"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="iRc-Q2-Q9v" id="7Uu-eH-dQT"/>
+            </connections>
+        </view>
+    </objects>
+</document>
