@@ -11,7 +11,6 @@
 		EF480A321B181188009F750F /* YVTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF480A301B181188009F750F /* YVTableCell.xib */; };
 		EF480A361B18126E009F750F /* YVImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF480A341B18126E009F750F /* YVImageCollectionCell.m */; };
 		EF480A371B18126E009F750F /* YVImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF480A351B18126E009F750F /* YVImageCollectionCell.xib */; };
-		EF480A391B182369009F750F /* 50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF480A381B182369009F750F /* 50.jpg */; };
 		EF480A461B1845C0009F750F /* YVSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF480A441B1845C0009F750F /* YVSectionView.m */; };
 		EF480A471B1845C0009F750F /* YVSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF480A451B1845C0009F750F /* YVSectionView.xib */; };
 		EF7F0C461B19BD6100B5A535 /* UIColor+ApplicationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F0C451B19BD6100B5A535 /* UIColor+ApplicationColor.m */; };
@@ -36,6 +35,7 @@
 		EFFEE9381B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE9371B1A95AF001479B0 /* YVNavigationBarDescriptionLabel.m */; };
 		EFFEE93B1B1AE195001479B0 /* YVIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE93A1B1AE195001479B0 /* YVIndexPath.m */; };
 		EFFEE93E1B1C1D2C001479B0 /* APLReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFEE93D1B1C1D2C001479B0 /* APLReachability.m */; };
+		EFFEE9411B1C1EF5001479B0 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFFEE9401B1C1EF5001479B0 /* kitten.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,6 @@
 		EF480A331B18126E009F750F /* YVImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVImageCollectionCell.h; sourceTree = "<group>"; };
 		EF480A341B18126E009F750F /* YVImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVImageCollectionCell.m; sourceTree = "<group>"; };
 		EF480A351B18126E009F750F /* YVImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVImageCollectionCell.xib; sourceTree = "<group>"; };
-		EF480A381B182369009F750F /* 50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 50.jpg; sourceTree = "<group>"; };
 		EF480A431B1845C0009F750F /* YVSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVSectionView.h; sourceTree = "<group>"; };
 		EF480A441B1845C0009F750F /* YVSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVSectionView.m; sourceTree = "<group>"; };
 		EF480A451B1845C0009F750F /* YVSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVSectionView.xib; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		EFFEE93A1B1AE195001479B0 /* YVIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVIndexPath.m; sourceTree = "<group>"; };
 		EFFEE93C1B1C1D2C001479B0 /* APLReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLReachability.h; sourceTree = "<group>"; };
 		EFFEE93D1B1C1D2C001479B0 /* APLReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLReachability.m; sourceTree = "<group>"; };
+		EFFEE9401B1C1EF5001479B0 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,6 @@
 		EF7F0C421B19BCF200B5A535 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				EFFEE92B1B1A92A0001479B0 /* AsyncImageView.h */,
-				EFFEE92C1B1A92A0001479B0 /* AsyncImageView.m */,
 				EFFEE9281B1A903B001479B0 /* UIView+Borders.h */,
 				EFFEE9291B1A903B001479B0 /* UIView+Borders.m */,
 				EF7F0C441B19BD6100B5A535 /* UIColor+ApplicationColor.h */,
@@ -158,9 +156,7 @@
 		EF7F0C431B19BD0900B5A535 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				EFFEE93C1B1C1D2C001479B0 /* APLReachability.h */,
-				EFFEE93D1B1C1D2C001479B0 /* APLReachability.m */,
-				EF480A381B182369009F750F /* 50.jpg */,
+				EFFEE9401B1C1EF5001479B0 /* kitten.jpg */,
 				EF9C21CE1B180A0C00C1A7EE /* Arrow@2x.png */,
 				EF9C21A41B18091100C1A7EE /* AppDelegate.h */,
 				EF9C21A51B18091100C1A7EE /* AppDelegate.m */,
@@ -251,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				EF7F0C431B19BD0900B5A535 /* AppDelegate */,
+				EFFEE93F1B1C1D86001479B0 /* 3d party */,
 				EF7F0C421B19BCF200B5A535 /* Extensions */,
 			);
 			name = AppDelegate/Utils;
@@ -319,6 +316,17 @@
 				EF480A451B1845C0009F750F /* YVSectionView.xib */,
 			);
 			name = HeaderView;
+			sourceTree = "<group>";
+		};
+		EFFEE93F1B1C1D86001479B0 /* 3d party */ = {
+			isa = PBXGroup;
+			children = (
+				EFFEE92B1B1A92A0001479B0 /* AsyncImageView.h */,
+				EFFEE92C1B1A92A0001479B0 /* AsyncImageView.m */,
+				EFFEE93C1B1C1D2C001479B0 /* APLReachability.h */,
+				EFFEE93D1B1C1D2C001479B0 /* APLReachability.m */,
+			);
+			name = "3d party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,8 +409,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFEE9411B1C1EF5001479B0 /* kitten.jpg in Resources */,
 				EF9C21B11B18091100C1A7EE /* LaunchScreen.xib in Resources */,
-				EF480A391B182369009F750F /* 50.jpg in Resources */,
 				EF9C21CF1B180A0D00C1A7EE /* Arrow@2x.png in Resources */,
 				EFFEE9321B1A94C0001479B0 /* YVNavigationBarView.xib in Resources */,
 				EF480A471B1845C0009F750F /* YVSectionView.xib in Resources */,

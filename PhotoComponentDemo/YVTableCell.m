@@ -10,7 +10,9 @@
 #import "YVImageCollectionCell.h"
 #import "UIColor+ApplicationColor.h"
 #import "AsyncImageView.h"
+#import "APLReachability.h"
 
+/** Collection cell reuse identifier */
 static NSString *const kCollectionCellReuseIndentifier = @"CollectionCell";
 NSInteger const YVItemLayoutSize = 67;
 NSInteger const YVItemSpacing = 10;
@@ -92,8 +94,17 @@ NSInteger const YVItemSpacing = 10;
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     YVImageCollectionCell *cell = (YVImageCollectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kCollectionCellReuseIndentifier forIndexPath:indexPath];
+    NSURL *urlForLoading = self.imagesURLArray[indexPath.row];
     [[AsyncImageLoader sharedLoader] cancelLoadingImagesForTarget:cell];
-    cell.imageView.imageURL = self.imagesURLArray[indexPath.row];
+    APLReachability *reachability = [APLReachability reachabilityWithHostName:[urlForLoading host]];
+    if ([reachability currentReachabilityStatus] == NotReachable)
+    {
+        cell.imageView.image = [UIImage imageNamed:@"kitten.jpg"];
+    }
+    else
+    {
+        cell.imageView.imageURL = self.imagesURLArray[indexPath.row];
+    }
     return cell;
 }
 
